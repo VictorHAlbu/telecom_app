@@ -26,7 +26,7 @@ class PedidoProdutosController < ApplicationController
 
     respond_to do |format|
       if @pedido_produto.save
-        format.html { redirect_to @pedido_produto, notice: "Pedido produto was successfully created." }
+        format.html { redirect_to pedido_pedido_produtos_path(@pedido), notice: "Pedido produto foi criado com sucesso." }
         format.json { render :show, status: :created, location: @pedido_produto }
       else
         format.html { render :new, status: :unprocessable_entity }

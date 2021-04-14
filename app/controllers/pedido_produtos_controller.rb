@@ -39,7 +39,7 @@ class PedidoProdutosController < ApplicationController
   def update
     respond_to do |format|
       if @pedido_produto.update(pedido_produto_params)
-        format.html { redirect_to @pedido_produto, notice: "Pedido produto was successfully updated." }
+        format.html { redirect_to pedido_pedido_produtos_path(@pedido), notice: "Pedido produto was successfully updated." }
         format.json { render :show, status: :ok, location: @pedido_produto }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PedidoProdutosController < ApplicationController
   def destroy
     @pedido_produto.destroy
     respond_to do |format|
-      format.html { redirect_to pedido_produtos_url, notice: "Pedido produto was successfully destroyed." }
+      format.html { redirect_to pedido_pedido_produtos_path(@pedido), notice: "Pedido produto was successfully destroyed." }
       format.json { head :no_content }
     end
   end

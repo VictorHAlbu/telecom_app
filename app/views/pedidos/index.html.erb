@@ -9,10 +9,11 @@
 <div class="table-responsive">
   <table class="table table-striped table-bordered table-hover">
     <thead>
-      <tr>
-            <th>Cliente</th>
-            <th>Valor total</th>
-            <th></th>
+    <tr>
+          <th>Cliente</th>
+          <th>Valor total</th>
+          <th></th>
+          <th></th>
         <th></th>
         <th></th>
       </tr>
@@ -20,8 +21,9 @@
 
     <tbody>
       <%= content_tag_for(:tr, @pedidos) do |pedido| %>
-            <td><%= pedido.cliente %></td>
+            <td><%= pedido.cliente.nome %></td>
             <td><%= pedido.valor_total %></td>
+            <td><%= link_to 'Items', "/pedidos/#{pedido.id}/pedido_produtos" %></td>
             <td><%= link_to 'Mostrar', pedido %></td>
         <td><%= link_to 'Editar', edit_pedido_path(pedido) %></td>
         <td><%= link_to 'Apagar', pedido, method: :delete, data: { confirm: 'Confirma?' } %></td>

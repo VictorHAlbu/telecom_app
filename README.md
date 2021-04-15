@@ -25,3 +25,6 @@ Em seguida crie sua base de dados com comandos:
 rails db:create
 rails db:migrate
 ```
+### Usabilidade
+
+![alt text](https://github.com/VictorHAlbu/telecom_app/tree/main/app/assets/images/cliente.png "Logo Title Text 1") 

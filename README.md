@@ -1,24 +1,27 @@
-# README
+# Telecom App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A aplicação similiar a um sistema de vendas com as tableas Pedido, Produtos, Cliente e Pedido_Produto
 
-Things you may want to cover:
+# Tecnologias
 
-* Ruby version
+Para desenvolver o projeto foi usado as tecnologias: Ruby on Rails, Css, Html, Bootstrap e Mysql
 
-* System dependencies
+### Pré-requisitos
 
-* Configuration
+Para rodar o projeto na sua máquina, deve ter instalado o ruby '2.5.8' e o 'rails', '~> 6.0.3' e Mysql
+Obs: Sua máquina deve ter o Nodejs instalado, pois o Rails 6 vem com webpacker.
 
-* Database creation
+```
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
+mysql  Ver 14.14 
+```
+Na sua máquina execute o comando bundle install para instalar todas as gems do projeto:
+```
+bundle instaal
+```
+Em seguida crie sua base de dados com comandos:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails db:create
+rails db:migrate
+```

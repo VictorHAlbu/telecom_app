@@ -13,7 +13,8 @@
             <th>Nome</th>
             <th>Telefone</th>
             <th>Data nascimento</th>
-            <th></th>
+            <th>Status</th>
+        <th></th>
         <th></th>
         <th></th>
       </tr>
@@ -24,6 +25,7 @@
             <td><%= cliente.nome %></td>
             <td><%= cliente.telefone %></td>
             <td><%= cliente.data_nascimento %></td>
+            <td><%= cliente.status %></td>
             <td><%= link_to 'Mostrar', cliente %></td>
         <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
         <td><%= link_to 'Apagar', cliente, method: :delete, data: { confirm: 'Confirma?' } %></td>

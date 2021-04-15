@@ -38,3 +38,11 @@ rails s
 
 #### Crie um Produto:
 ![alt text](https://github.com/VictorHAlbu/telecom_app/blob/main/app/assets/images/produtos.png) 
+#### Crie um Pedido
+![alt text](https://github.com/VictorHAlbu/telecom_app/blob/main/app/assets/images/Novo%20Pedido.png) 
+
+
+
+#### Para adicionar items ao seu pedido retorne na lista de pedidos e adicione no link "Items"
+Destacado na imagem:
+![alt text](https://github.com/VictorHAlbu/telecom_app/blob/main/app/assets/images/items.png)

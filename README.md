@@ -9,7 +9,8 @@ Para desenvolver o projeto foi usado as tecnologias: Ruby on Rails, Css, Html, B
 ### Pré-requisitos
 
 Para rodar o projeto na sua máquina, deve ter instalado o ruby '2.5.8' e o 'rails', '~> 6.0.3' e Mysql
-Obs: Sua máquina deve ter o Nodejs instalado, pois o Rails 6 vem com webpacker.
+
+Obs: Sua máquina deve ter o Nodejs instalado, pois o Rails 6 vem com webpacker
 
 ```
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'

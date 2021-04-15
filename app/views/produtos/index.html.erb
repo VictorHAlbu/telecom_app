@@ -12,7 +12,7 @@
       <tr>
             <th>Nome</th>
             <th>Valor</th>
-            <th></th>
+            <th>Status</th>
         <th></th>
         <th></th>
       </tr>
@@ -22,6 +22,7 @@
       <%= content_tag_for(:tr, @produtos) do |produto| %>
             <td><%= produto.nome %></td>
             <td><%= produto.valor %></td>
+            <td><%= produto.status %></td>
             <td><%= link_to 'Mostrar', produto %></td>
         <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
         <td><%= link_to 'Apagar', produto, method: :delete, data: { confirm: 'Confirma?' } %></td>

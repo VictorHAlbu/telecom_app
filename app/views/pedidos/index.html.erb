@@ -10,6 +10,7 @@
   <table class="table table-striped table-bordered table-hover">
     <thead>
     <tr>
+          <th>Numero pedido</th>
           <th>Cliente</th>
           <th>Valor total</th>
           <th></th>
@@ -21,6 +22,7 @@
 
     <tbody>
       <%= content_tag_for(:tr, @pedidos) do |pedido| %>
+            <td><%= pedido.cliente.id %></td>
             <td><%= pedido.cliente.nome %></td>
             <td><%= pedido.valor_total %></td>
             <td><%= link_to 'Items', "/pedidos/#{pedido.id}/pedido_produtos" %></td>

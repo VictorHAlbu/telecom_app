@@ -3,7 +3,7 @@ class ProdutosController < ApplicationController
 
   # GET /produtos or /produtos.json
   def index
-    @produtos = Produto.all
+      @produtos = Produto.all
   end
 
   # GET /produtos/1 or /produtos/1.json
@@ -64,6 +64,6 @@ class ProdutosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def produto_params
-      params.require(:produto).permit(:nome, :valor)
+      params.require(:produto).permit(:nome, :valor, :status)
     end
 end

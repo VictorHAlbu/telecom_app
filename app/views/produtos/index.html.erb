@@ -13,6 +13,8 @@
             <th>Nome</th>
             <th>Valor</th>
             <th>Status</th>
+        <th>Produtos Inativos</th>
+        <th></th>
         <th></th>
         <th></th>
       </tr>
@@ -23,6 +25,7 @@
             <td><%= produto.nome %></td>
             <td><%= produto.valor %></td>
             <td><%= produto.status %></td>
+            <td><%= link_to 'Inativos', produtos_inativos_path %></td>
             <td><%= link_to 'Mostrar', produto %></td>
         <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
         <td><%= link_to 'Apagar', produto, method: :delete, data: { confirm: 'Confirma?' } %></td>

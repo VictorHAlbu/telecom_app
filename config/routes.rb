@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :pedidos do
     resources :pedido_produtos
   end
+  get 'produtos/inativos/', to: 'produtos#inativo'
   resources :produtos
   resources :clientes
   root to: "home#index"

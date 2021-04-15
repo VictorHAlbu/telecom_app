@@ -6,6 +6,10 @@ class ProdutosController < ApplicationController
       @produtos = Produto.where(status: :active)
   end
 
+  def inativo
+    @produtos = Produto.where(status: :inativo)
+  end
+
   # GET /produtos/1 or /produtos/1.json
   def show
   end

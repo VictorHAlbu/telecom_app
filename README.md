@@ -25,6 +25,16 @@ Em seguida crie sua base de dados com comandos:
 rails db:create
 rails db:migrate
 ```
-### Usabilidade
+Para subir o projeto local execute:
+```
+rails s
+```
 
-![alt text](https://github.com/VictorHAlbu/telecom_app/tree/main/app/assets/images/cliente.png "Logo Title Text 1") 
+### Usabilidade
+#### Crie um Cliente:
+
+![alt text](https://github.com/VictorHAlbu/telecom_app/blob/main/app/assets/images/cliente.png) 
+
+
+#### Crie um Produto:
+![alt text](https://github.com/VictorHAlbu/telecom_app/blob/main/app/assets/images/produtos.png) 

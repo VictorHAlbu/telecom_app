@@ -1,6 +1,6 @@
 # Telecom App
 
-A aplicação similiar a um sistema de vendas com as tableas Pedido, Produtos, Cliente e Pedido_Produto
+A aplicação similiar a um sistema de vendas com as tabelas Pedido, Produtos, Cliente e Pedido_Produto
 
 # Tecnologias
 
